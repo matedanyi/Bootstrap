@@ -1,452 +1,356 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
 
-    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <title>Webshop</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <i class="bi bi-basket"></i>
-        <a class="navbar-brand" href="#"
-          ><i class="bi bi-basket"></i> Webshop</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Főoldal</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Vásárlási feltételek</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kategóriák
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Mosógépek</a></li>
-                <li><a class="dropdown-item" href="#">Fejhallgatók</a></li>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Open account</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-                <li>
-                  <a class="dropdown-item" href="#">Kávéfőzők</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Olajsütők</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Keresés"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light" type="submit">Keresés</button>
-          </form>
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          meets<br />
+          <span class="highlight">minimalist</span>
+        </h1>
+        <h4>A simpler banking experience for a simpler life.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in a modern bank and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch your money grow</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Free debit card included</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-lg-4">
-          <h1 class="display-4 text-info">Üdvözöljük!</h1>
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Tranfser money to anyone, instantly! No fees, no BS.
+          </h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div class="col-lg-8 mt-3 mt-lg-0">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="pics/sample1.jpg" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="pics/sample2.jpg" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="pics/sample3.jpg" class="d-block w-100" alt="..." />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
           </div>
+          <h5 class="operations__header">
+            Buy a home or make your dreams come true, with instant loans.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <h2 class="display-6 text-info mb-4">TOP termékek</h2>
+    </section>
 
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/sony.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    Sony Alpha 7 III Body (ILCE-7M3)<br />Digitális
-                    fényképezőgép
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      619 790 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/garmin.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    Garmin Vivoactive 4s<br />okosóra
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      92 490 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/iphone.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    Apple iPhone 13 128 GB<br />mobiltelefon
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      321 990 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Millions of Bankists are already making their lifes simpler.
+        </h3>
       </div>
 
-      <div class="row my-5">
-        <div class="col">
-          <a href="#"><img src="pics/banner.jpg" alt="" class="img-fluid" /></a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h2 class="display-6 text-info mb-4">Kiemelt termékek</h2>
-
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/kiemelt1.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    LG F2DV5S7S0E<br />mosógép
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      180 000 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="text-decoration-none text-secondary small"
-                  >Mosógépek</a
-                >
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/kiemelt2.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    DeLonghi EC 685 Dedica<br />kávéfőző
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      55 000 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="text-decoration-none text-secondary small"
-                  >Kávéfőzők</a
-                >
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/kiemelt3.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    JBL Tune 510BT<br />fejhallgató
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">15000 Ft</div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="text-decoration-none text-secondary small"
-                  >Fejhallgatók</a
-                >
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <a href="#"
-                  ><img src="pics/kiemelt4.jpg" class="card-img-top" alt=""
-                /></a>
-                <div class="card-body">
-                  <h3 class="h5 mb-3 lh-base card-title">
-                    Philips HD9650/90<br />olajsütő
-                  </h3>
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <a href="#" class="btn btn-warning">Megnézem</a>
-                    </div>
-                    <div class="col fw-bold text-danger text-end">
-                      89 990 Ft
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="text-decoration-none text-secondary small"
-                  >Olajsütők</a
-                >
-              </div>
-            </div>
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best financial decision ever!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
           </div>
         </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col">
-          <h2 class="display-6 text-info mb-4">Információk</h2>
 
-          <div class="row">
-            <div class="col">
-              <div class="bg-light text-center p-3">
-                <i class="bi bi-truck fs-1 text-info"></i>
-                <p class="h5 mt-2 mb-4">Szállítási feltételek</p>
-                <a href="#" class="btn btn-secondary">Elolvasom</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light text-center p-3">
-                <i class="bi bi-credit-card-2-back fs-1 text-info"></i>
-                <p class="h5 mt-2 mb-4">Fizetési feltételek</p>
-                <a href="#" class="btn btn-secondary">Elolvasom</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light text-center p-3">
-                <i class="bi bi-shield-check fs-1 text-info"></i>
-                <p class="h5 mt-2 mb-4">Biztonságos vásárlás</p>
-                <a href="#" class="btn btn-secondary">Elolvasom</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light text-center p-3">
-                <i class="bi bi-file-earmark-text fs-1 text-info"></i>
-                <p class="h5 mt-2 mb-4">Vásárlási feltételek</p>
-                <a href="#" class="btn btn-secondary">Elolvasom</a>
-              </div>
-            </div>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The last step to becoming a complete minimalist
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer class="bg-light mt-5 border-top py-5 text-secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <p class="fw-bold text-info">Ügyfélszolgálati és átvételi pont</p>
-            <p class="my-1 fw-bold">Webshop Kft.</p>
-            <p class="my-1">1111 Budapest, Fő utca 23.</p>
-            <p class="my-1">info@webshop.hu</p>
-            <p class="my-1">+ 36 20 222 3333</p>
-          </div>
-          <div class="col">
-            <p class="fw-bold text-info">Információ</p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Szállítási feltételek</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Fizetési feltételek</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Biztonságos fizetés</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Vásárlási feltételek</a
-              >
-            </p>
-          </div>
-          <div class="col">
-            <p class="fw-bold text-info">Népszerű kategóriák</p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Digitális fényképező</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Mobiltelefon</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Okosóra, aktivitásmérő</a
-              >
-            </p>
-            <p class="my-1">
-              <a href="#" class="text-decoration-none text-secondary"
-                >Hűtőszekrény</a
-              >
-            </p>
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally free from old-school banks
+            </h5>
+            <blockquote class="testimonial__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
           </div>
         </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
       </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join Bankist was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Jonas Schmedtmann</a
+        >. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own product.
+      </p>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
